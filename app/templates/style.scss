@@ -1,0 +1,49 @@
+//	WordPress Header (optional)
+//	Theme name and variables need to be changed according to the project
+//	@import "wordpress-header";
+
+
+/*====================================
+ *	IMPORT BASE
+ *===================================*/
+
+$bower_path = "../../bower_components/";
+
+<% if (props.cssframework === "inuit") { %>
+@import "inuit_vars";
+@import $bower_path + "inuit.css/inuit";
+$space: $base-spacing-unit; //shortened notation
+<% } else if (props.cssframework === "bootstrap-sass-official") { %>
+@import $bower_path + "bootstrap-sass-official/assets/stylesheets/bootstrap";
+<% } %>
+
+
+
+/*====================================
+ *	ADD MIXINS
+ *	(optional) 
+ *===================================*/
+
+<% if (props.components['bourbon']) { %>
+@import $bower_path + "bourbon/app/assets/stylesheets/bourbon";
+<% } %>
+<% if (props.components['animate.css']) { %>
+@import $bower_path + "animate.css/animate.css";
+<% } %>
+@import "globals/mixins";
+
+
+
+/*==================================
+ *	IMPORT PARTIAL CUSTOM STYLES
+ *	(+ fonts, mixins)
+ *=================================*/
+
+// globals
+@import "globals/fontface";
+@import "globals/typography";
+@import "globals/layout";
+
+// partials
+@import "partials/header";
+@import "partials/footer";

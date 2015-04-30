@@ -1,0 +1,18 @@
+.container {
+	@include clearfix;
+	max-width: $container-size;
+	margin: 0 auto;
+	padding: $space;
+} 
+
+section, footer {
+	@include clearfix;
+	clear: both;
+}
+
+//  default google map responsive fix
+#map-canvas {
+	img {
+		max-width: none;
+	}
+}

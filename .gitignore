@@ -1,0 +1,11 @@
+node_modules/
+docs/
+.sass-cache/
+bower_components/
+bower.json
+*.sublime-project
+*.sublime-workspace
+*.TMP
+.DS_Store
+*.swp
+*.swo
