@@ -31,7 +31,7 @@ module.exports = yeoman.generators.Base.extend({
         name: 'inuit.css'
       },{
         value: 'bootstrap-sass-official',
-        name: 'twitter bootstrap'
+        name: 'twitter bootstrap (sass version)',
       },{
         value: 'none',
         name: 'none'
